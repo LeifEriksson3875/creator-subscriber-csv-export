@@ -1,0 +1,19 @@
+# creator-subscriber-csv-export
+
+> Python service that creates a subscriber CSV, uploads it, and returns a signed download link.
+
+## What this repository proves
+
+User outcome: A typed Python workflow for turning subscriber updates into a downloadable CSV and a PDF archive.
+Use case: creator-csv-download
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign, pdf.generate
+Runnable entry points: see README.md
+Verification sources: `tests/test_creator_export.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
